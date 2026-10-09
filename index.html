@@ -1,167 +1,255 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Kyra Elife : Bordados, toppers, chapitas y regalos personalizados">
-        <title>Kyra Elife | Detalles personalizados</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" type="image/jpeg" href="assets/img/logo-kyra-elife.jpeg"> <!-- rel="icon" (NO "favicon"): ícono de la pestaña -->
-        <link rel="apple-touch-icon" href="assets/img/logo-kyra-elife.jpeg">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kyra Elife : Bordados, toppers, chapitas y regalos personalizados"
+    />
+    <title>Kyra Elife | Detalles personalizados</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/jpeg" href="assets/img/logo-kyra-elife.jpeg" />
+    <!-- rel="icon" (NO "favicon"): ícono de la pestaña -->
+    <link rel="apple-touch-icon" href="assets/img/logo-kyra-elife.jpeg" />
+  </head>
 
-    <body>
-        
+  <body>
+    <header class="header">
+      <a href="#inicio" class="header__logo">
+        <img
+          src="assets/img/logo-kyra-elife.jpeg"
+          alt="Kyra Elife, detalles personalizados"
+          width="60"
+          height="60"
+        />
+      </a>
 
-        <header class="header">
+      <button
+        class="header__toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
 
-            <a href="#inicio" class="header__logo">
-                <img src="assets/img/logo-kyra-elife.jpeg" alt="Kyra Elife, detalles personalizados" width="60" height="60">
-            </a>
+      <nav class="nav" aria-label="Menú principal">
+        <ul class="nav__lista">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#cotizar">Cómo cotizar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#ocasiones">Ocasiones</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            <button class="header__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <main>
+      <!-- PORTADA (hero)-->
+      <section class="hero" id="inicio">
+        <p class="hero__detalle">Detalles personalizados</p>
+        <h1 class="hero__titulo">Detalles únicos hechos con amor</h1>
+        <p class="hero__texto">
+          Bordados, toppers, chapitas y regalos personalizados para cada
+          celebración.
+        </p>
+        <a href="#cotizar" class="boton">Cotiza tu diseño</a>
+      </section>
 
-            <nav class="nav" aria-label="Menú principal">
-                <ul class="nav__lista">
-                    <li><a href="#productos">Productos</a></li> 
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#cotizar">Cómo cotizar</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#ocasiones">Ocasiones</a></li>
-                </ul>
-            </nav>
-        </header>
+      <!-- PRODUCTOS -->
+      <section class="productos" id="productos">
+        <h2 class="seccion__titulo">Nuestros productos</h2>
 
-        <main>
+        <div class="productos__grid">
+          <article class="producto">
+            <img
+              class="producto__img"
+              src=""
+              alt="Toalla rosada con un nombre bordado"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <h3 class="producto__titulo">Bordados</h3>
+            <p class="producto__texto">
+              Toallas con nombre o inicial bordada, ideales para regalar.
+            </p>
+          </article>
 
-            <!-- PORTADA (hero)-->
-            <section class="hero" id="inicio">
-                <p class="hero__detalle">Detalles personalizados</p>
-                <h1 class="hero__titulo">Detalles únicos hechos con amor</h1>
-                <p class="hero__texto">Bordados, toppers, chapitas y regalos personalizados para cada celebración.</p>
-                <a href="#cotizar" class="boton">Cotiza tu diseño</a>
-            </section>
+          <article class="producto">
+            <img
+              class="producto__img"
+              src=""
+              alt="Topper con brillo para torta de cumpleaños"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <h3 class="producto__titulo">Toppers</h3>
+            <p class="producto__texto">
+              Toppers para tortas diseñados según tu celebración.
+            </p>
+          </article>
 
-            
-            <!-- PRODUCTOS -->
-            <section class="productos" id="productos">
-                <h2 class="seccion__titulo">Nuestros productos</h2>
+          <article class="producto">
+            <img
+              class="producto__img"
+              src=""
+              alt="Chapitas personalizadas"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <h3 class="producto__titulo">Chapitas</h3>
+            <p class="producto__texto">Chapitas con el diseño que imagines.</p>
+          </article>
 
-                <div class="productos__grid">
-                    
-                    <article class="producto">
-                        <img class="producto__img" src="" 
-                        alt="Toalla rosada con un nombre bordado" width="600" height="600" loading="lazy">
-                        <h3 class="producto__titulo">Bordados</h3>
-                        <p class="producto__texto">Toallas con nombre o inicial bordada, ideales para regalar.</p>
-                    </article>
+          <article class="producto">
+            <img
+              class="producto__img"
+              src=""
+              alt="Llaveros personalizados"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <h3 class="producto__titulo">Llaveros</h3>
+            <p class="producto__texto">
+              Llaveros únicos para regalar o regalarte.
+            </p>
+          </article>
 
-                    <article class="producto">
-                        <img class="producto__img" src="" 
-                        alt="Topper con brillo para torta de cumpleaños" width="600" height="600" loading="lazy">
-                        <h3 class="producto__titulo">Toppers</h3>
-                        <p class="producto__texto">Toppers para tortas diseñados según tu celebración.</p>
-                    </article>
+          <article class="producto">
+            <img
+              class="producto__img"
+              src=""
+              alt="Accesorios y regalos personalizados"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <h3 class="producto__titulo">Accesorios y regalos</h3>
+            <p class="producto__texto">
+              Detalles pensados especialmente para esa persona.
+            </p>
+          </article>
+        </div>
+      </section>
 
-                    <article class="producto">
-                        <img class="producto__img" src="" 
-                        alt="Chapitas personalizadas" width="600" height="600" loading="lazy">
-                        <h3 class="producto__titulo">Chapitas</h3>
-                        <p class="producto__texto">Chapitas con el diseño que imagines.</p>
-                    </article>
+      <!-- OCACIONES -->
+      <section class="ocasiones" id="ocasiones">
+        <h2 class="seccion__titulo">Para cada ocasión</h2>
+        <ul class="ocasiones__lista">
+          <li>🎂 Cumpleaños</li>
+          <li>💍 Aniversarios y bodas</li>
+          <li>👶 Baby shower y bautizos</li>
+          <li>🎓 Graduaciones</li>
+          <li>🏡 Inauguración de casa</li>
+          <li>🐾 Celebraciones de tus peluditos</li>
+        </ul>
+      </section>
 
-                    <article class="producto">
-                        <img class="producto__img" src="" 
-                        alt="Llaveros personalizados" width="600" height="600" loading="lazy">
-                        <h3 class="producto__titulo">Llaveros</h3>
-                        <p class="producto__texto">Llaveros únicos para regalar o regalarte.</p>
-                    </article>
+      <!-- GALERIA -->
+      <section class="galeria" id="galeria">
+        <h2 class="seccion__titulo">Trabajos realizados</h2>
+        <div class="galeria__grid">
+          <figure class="galeria__item">
+            <img
+              src="https://placehold.co/600x600/FFF8F5/D9809A?text=Foto+1"
+              alt="Trabajo realizado por Kyra Elife"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="galeria__item">
+            <img
+              src="https://placehold.co/600x600/FFF8F5/D9809A?text=Foto+2"
+              alt="Trabajo realizado por Kyra Elife"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="galeria__item">
+            <img
+              src="https://placehold.co/600x600/FFF8F5/D9809A?text=Foto+3"
+              alt="Trabajo realizado por Kyra Elife"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="galeria__item">
+            <img
+              src="https://placehold.co/600x600/FFF8F5/D9809A?text=Foto+4"
+              alt="Trabajo realizado por Kyra Elife"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
 
-                    <article class="producto">
-                        <img class="producto__img" src="" 
-                        alt="Accesorios y regalos personalizados" width="600" height="600" loading="lazy">
-                        <h3 class="producto__titulo">Accesorios y regalos</h3>
-                        <p class="producto__texto">Detalles pensados especialmente para esa persona.</p>
-                    </article>
+      <section class="cotizar" id="cotizar">
+        <h2 class="seccion__titulo">¿Cómo cotizar?</h2>
+        <ol class="cotizar__pasos">
+          <li class="paso">
+            <h3 class="paso__titulo">Elige tu producto</h3>
+            <p>topper, bordado, chapita, llavero o regalo</p>
+          </li>
 
-                </div>
-            </section>
+          <li class="paso">
+            <h3 class="paso__titulo">Cuéntanos tu idea</h3>
+            <p>Nombre, ocasión, colores o el estilo que imaginas.</p>
+          </li>
 
+          <li class="paso">
+            <h3 class="paso__titulo">Recibe tu detalle</h3>
+            <p>Lo creamos a mano, especialmente para ti.</p>
+          </li>
+        </ol>
+        <a
+          href="https://wa.me/56956483356"
+          class="boton"
+          target="_blank"
+          rel="noopener"
+          >Cotizar por WhatsApp</a
+        >
+      </section>
 
-            <!-- OCACIONES -->
-            <section class="ocasiones" id="ocasiones">
-                <h2 class="seccion__titulo">Para cada ocasión</h2>
-                <ul class="ocasiones__lista">
-                    <li>🎂 Cumpleaños</li>
-                    <li>💍 Aniversarios y bodas</li>
-                    <li>👶 Baby shower y bautizos</li>
-                    <li>🎓 Graduaciones</li>
-                    <li>🏡 Inauguración de casa</li>
-                    <li>🐾 Celebraciones de tus peluditos</li>
-                </ul>
-            </section>
+      <!-- CONTACTO -->
+      <section class="contacto" id="contacto">
+        <h2 class="seccion__titulo">Contacto</h2>
+        <address class="contacto__info">
+          <p>📍 Providencia, Santiago</p>
+          <p>
+            <a
+              href="https://www.instagram.com/kyra.elife/"
+              target="_blank"
+              rel="noopener"
+              >📸 @kyra.elife</a
+            >
+          </p>
+          <p>
+            <a href="https://wa.me/56900000000" target="_blank" rel="noopener"
+              >💬 WhatsApp</a
+            >
+          </p>
+        </address>
+      </section>
+    </main>
 
-            <!-- GALERIA -->
-            <section class="galeria" id="galeria">
-                <h2 class="seccion__titulo">Trabajos realizados</h2>
-                <div class="galeria__grid">
-                    <figure class="galeria__item">
-                    <img src="https://placehold.co/600x600/FFF8F5/D9809A?text=Foto+1"
-                        alt="Trabajo realizado por Kyra Elife" width="600" height="600" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                    <img src="https://placehold.co/600x600/FFF8F5/D9809A?text=Foto+2"
-                        alt="Trabajo realizado por Kyra Elife" width="600" height="600" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                    <img src="https://placehold.co/600x600/FFF8F5/D9809A?text=Foto+3"
-                        alt="Trabajo realizado por Kyra Elife" width="600" height="600" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                    <img src="https://placehold.co/600x600/FFF8F5/D9809A?text=Foto+4"
-                        alt="Trabajo realizado por Kyra Elife" width="600" height="600" loading="lazy">
-                    </figure>
-                </div>
-             </section>
+    <!-- FOOTER: -->
+    <footer class="footer">
+      <p>
+        © <span id="anio">2026</span> Kyra Elife · Detalles personalizados
+        hechos con amor
+      </p>
+      <!-- el año lo actualizará JS en el Bloque 7 -->
+    </footer>
 
-
-            <section class="cotizar" id="cotizar">
-                <h2 class="seccion__titulo"> ¿Cómo cotizar?</h2>
-                <ol class="cotizar__pasos">
-                    <li class="paso">
-                        <h3 class="paso__titulo">Elige tu producto</h3>
-                        <p>topper, bordado, chapita, llavero o regalo</p>
-                    </li>
-
-                    <li class="paso">
-                        <h3 class="paso__titulo">Cuéntanos tu idea</h3>
-                        <p>Nombre, ocasión, colores o el estilo que imaginas.</p>
-                    </li>
-
-                    <li class="paso">
-                        <h3 class="paso__titulo">Recibe tu detalle</h3>
-                        <p>Lo creamos a mano, especialmente para ti.</p>
-                    </li>
-                </ol>
-                <a href="https://wa.me/56956483356" class="boton" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
-            </section>
-        
-            <!-- CONTACTO -->
-            <section class="contacto" id="contacto">
-                <h2 class="seccion__titulo">Contacto</h2>
-                <address class="contacto__info">
-                    <p>📍 Providencia, Santiago</p>
-                    <p><a href="https://www.instagram.com/kyra.elife/" target="_blank" rel="noopener">📸 @kyra.elife</a></p>
-                    <p><a href="https://wa.me/56900000000" target="_blank" rel="noopener">💬 WhatsApp</a></p>
-                </address>
-            </section>
-
-        </main>
-
-
-
-
-        <script src="js/main.js" defer></script>
-    </body>
-
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
